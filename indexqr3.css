@@ -1,0 +1,63 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Outfit:wght@400;700&display=swap');
+
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "outfit"sans-serif;
+    font-size: 15px;
+    background-color:var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh-1px);
+    margin: 1.25rem;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+    border-radius: 2rem;
+    padding: 1.25rem;
+    box-shadow: 10px 10px 20px lightgray;
+    
+}
+.container img{
+    max-width: 100%;
+    border-radius: 2rem;
+}
+
+.container h2{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.container p {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 300px;
+    }
+    
+}
